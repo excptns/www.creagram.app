@@ -2,6 +2,10 @@
 
 namespace Database\Seeders;
 
+use App\Models\Folder;
+use App\Models\Link;
+use App\Models\Member;
+use App\Models\User;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -13,6 +17,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        return User::factory()
+            ->hasFolders(3, function (array $attributes, User $user) {
+                return ['user_type' => $user->type];
+            })
+            ->count(100)
+            ->create();
     }
 }

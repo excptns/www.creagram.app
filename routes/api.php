@@ -17,3 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::middleware('auth:api')->group(function () {
+    Route::apiResource('/users', \App\Http\Controllers\UserController::class);
+    Route::apiResource('/folders', \App\Http\Controllers\FolderController::class);
+    Route::apiResource('/members', \App\Http\Controllers\MemberController::class);
+    Route::apiResource('/links', \App\Http\Controllers\LinkController::class);
+});

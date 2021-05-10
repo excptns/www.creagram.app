@@ -15,7 +15,12 @@ class CreateMembersTable extends Migration
     {
         Schema::create('members', function (Blueprint $table) {
             $table->id();
+            $table->string('photo')->default('default.jpg');;
+            $table->string('name');
+            $table->string('description');
+            $table->unsignedBigInteger('folder_id');
             $table->timestamps();
+            $table->foreign('folder_id')->references('id')->on('folders')->onDelete('cascade');
         });
     }
 
