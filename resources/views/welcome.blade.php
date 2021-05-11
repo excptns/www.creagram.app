@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creagramm</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css">
-
 </head>
 <body>
 
@@ -14,22 +13,31 @@
     <div class="w-full px-6 mx-auto leading-10 text-center md:px-8 max-w-7xl">
         <div class="box-border flex flex-wrap items-center justify-between -mx-4 text-indigo-900">
             <div class="relative flex items-center w-auto px-4 leading-10 lg:flex-grow-0 lg:flex-shrink-0 lg:text-left">
-                <a href="#_" class="box-border inline-block font-sans text-2xl font-bold text-left text-white no-underline bg-transparent cursor-pointer focus:no-underline">
-                    tails.
+                <a href="{{ route('index') }}" class="box-border inline-block font-semibold text-2xl font-bold
+                text-left
+                text-white
+                no-underline bg-transparent cursor-pointer focus:no-underline">
+                    Creagram
                 </a>
             </div>
             <div class="left-0 z-0 flex justify-start w-full px-4 mt-2 font-medium leading-10 md:mt-0 md:justify-center md:absolute md:flex-grow-0 md:text-left lg:text-center">
-                <a href="#_" class="box-border inline-block mr-4 text-center text-gray-300 no-underline bg-transparent cursor-pointer hover:text-gray-200 focus:no-underline">
+                <a href="{{ route('index') }}" class="box-border font-semibold inline-block mr-4 text-center
+                text-gray-300
+                no-underline
+                bg-transparent
+                 cursor-pointer hover:text-gray-200 focus:no-underline">
                     Home
                 </a>
-                <a href="#_" class="box-border inline-block mr-4 text-center text-gray-300 no-underline bg-transparent cursor-pointer hover:text-gray-200 focus:no-underline">
-                    Features
-                </a>
-                <a href="#_" class="box-border inline-block mr-4 text-center text-gray-300 no-underline bg-transparent cursor-pointer hover:text-gray-200 focus:no-underline">
-                    Pricing
-                </a>
-                <a href="#_" class="box-border inline-block mr-4 text-center text-gray-300 no-underline bg-transparent cursor-pointer hover:text-gray-200 focus:no-underline">
+                <a href="/about" class="box-border font-semibold inline-block font-semibold mr-4 text-center
+                text-gray-300
+                no-underline
+                bg-transparent cursor-pointer hover:text-gray-200 focus:no-underline">
                     About
+                </a>
+                <a href="/contact" class="box-border font-semibold inline-block mr-4 text-center text-gray-300
+                no-underline
+                bg-transparent cursor-pointer hover:text-gray-200 focus:no-underline">
+                    Contact
                 </a>
             </div>
             <div class="relative flex items-center px-4 mt-2 font-medium leading-10 md:flex-grow-0 md:flex-shrink-0 md:mt-0 md:text-right lg:flex-grow-0 lg:flex-shrink-0">
@@ -54,63 +62,14 @@
             </div>
         </div>
         <div class="flex flex-col items-start w-full h-full max-w-xs pb-10 space-y-5 md:pb-0 md:max-w-none">
-            <h2 class="text-5xl font-black text-gray-900">Designs that help you tell your story.</h2>
-            <p class="text-lg text-gray-700">Use our wireframes and template to create a beautiful user interface to showcase your next great idea.</p>
-            <a href="#_" class="flex items-center px-4 py-2 font-medium text-gray-900 border-2 border-gray-900 rounded-3xl">
-                Get Started
+            <h2 class="text-4xl font-semibold md:leading-tight md:text-5xl md:leading-tight md:text-5xl
+            text-gray-900">Creagram - organize your contact list</h2>
+            <a href="#_" class="flex items-center px-4 font-semibold py-2 font-medium text-gray-900 border-2
+            border-gray-900 rounded-3xl">
+                Launch the app
                 <svg class="w-4 h-4 ml-1 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
             </a>
         </div>
-    </div>
-</section>
-
-<!-- Section 3 -->
-<section class="w-full bg-gray-100">
-    <div class="py-10 mx-auto max-w-7xl md:px-8">
-
-        <div class="flex flex-col items-center w-full overflow-hidden bg-white md:flex-row rounded-3xl">
-            <div class="flex flex-col w-full p-10 mt-4 text-center md:w-1/2 md:mt-0">
-                <p class="mb-4 text-3xl font-medium leading-none">iOS 14</p>
-                <h2 class="max-w-md mx-auto mb-6 text-4xl font-semibold md:leading-tight md:text-5xl">Looks brand new.<br>Feels like home.</h2>
-                <a href="#_" class="flex items-center w-auto mx-auto text-lg leading-tight text-center text-gray-900 hover:underline">
-                    <span>Learn More</span>
-                    <svg class="w-3 h-3 mt-0.5 ml-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                </a>
-            </div>
-            <div class="w-full mt-7 md:w-1/2 md:mt-0">
-                <img src="https://cdn.devdojo.com/images/april2021/iphone-images.jpg" class="w-full">
-            </div>
-        </div>
-
-        <div class="flex flex-col mt-10 md:flex-row md:mt-8 md:space-x-8">
-            <div class="flex flex-col items-center justify-center flex-1 overflow-hidden text-center bg-white rounded-3xl">
-                <div class="flex flex-col px-10 pb-5 space-y-6 pt-14 md:px-8">
-                    <h3 class="text-4xl font-semibold leading-none md:text-5xl">
-                        Switch to iPhone
-                    </h3>
-                    <p class="text-xl font-light text-gray-800">So many reasons. So incredibly easy.</p>
-                    <a href="#_" class="flex items-center w-auto mx-auto text-lg leading-tight text-center text-gray-900 hover:underline">
-                        <span>Learn more</span>
-                        <svg class="w-4 h-4 ml-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                    </a>
-                </div>
-                <img src="https://cdn.devdojo.com/images/april2021/iphone-121.jpg" class="w-2/3">
-            </div>
-            <div class="relative flex flex-col items-center justify-center flex-1 py-32 mt-10 overflow-hidden text-center bg-white md:mt-0 rounded-3xl">
-                <img src="https://cdn.devdojo.com/images/april2021/iphone-12-security.png" class="w-20 h-auto">
-                <div class="flex flex-col px-10 space-y-6 md:px-8">
-                    <h3 class="text-3xl font-semibold leading-none md:text-4xl">
-                        Privacy
-                    </h3>
-                    <p class="text-xl font-light text-gray-800">What you share should be up to you.</p>
-                    <a href="#_" class="flex items-center w-auto mx-auto text-lg leading-tight text-center text-gray-900 hover:underline">
-                        <span>Learn more</span>
-                        <svg class="w-4 h-4 ml-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-
     </div>
 </section>
 
